@@ -7,6 +7,7 @@ import LineProgress from "../line/index";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import DownloadIcon from "@mui/icons-material/Download";
 import Sliks from "../skils/index";
 const index = () => {
   const [percentage, setPercentage] = useState(0);
@@ -172,6 +173,14 @@ const index = () => {
           </div>
           <div className="bg-mainBgColor border border-t-leftTextColorGray py-4">
             <Sliks />
+          </div>
+          <div className="bg-mainBgColor border border-t-leftTextColorGray py-4">
+            <span className="text-leftTextColorWhite cursor-pointer text-12">
+              Download Resume
+            </span>
+            <span className="text-leftTextColorWhite cursor-pointer text-12">
+              <DownloadIcon />
+            </span>
           </div>
         </div>
         <div className="flex justify-center gap-3 mt-[-15px] p-3">
