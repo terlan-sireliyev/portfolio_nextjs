@@ -6,12 +6,35 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontWeight: {
+      bold: "800",
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      spacing: {
+        1: "9rem",
+        2: "5px",
       },
+    },
+    fontSize: {
+      14: "14px",
+      10: ".75rem",
+      12: "12px",
+    },
+    colors: {
+      mainBgColor: "#000000",
+      leftBgOne: "#181818",
+      leftBgTwo: "#121212",
+      leftTextColorWhite: "#FFFFFF",
+      leftTextColorGray: "#8B8B8B",
+      leftTextColorBlue: "#0000FF",
+      leftTextColorRed: "#F70000",
+      leftTextColorGreen: "#007C00",
+      lineProgressColor: "#1FDF64",
+    },
+    borderRadius: {
+      fiftyPercent: "50%",
+      leftMainBorder: ".75rem",
+      toolsBorder: "44px",
     },
   },
   plugins: [],

@@ -1,0 +1,7 @@
+.progScroll {
+  overflow-x: auto;
+  height: 380px;
+}
+.progScroll::-webkit-scrollbar {
+  width: 0;
+}
