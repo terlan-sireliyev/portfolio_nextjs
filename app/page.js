@@ -1,9 +1,8 @@
-import Image from "next/image";
 import LeftSide from "../components/user/leftSide";
 
 export default function Home() {
   return (
-    <div className="bg-mainBgColor p-4 ">
+    <div className="bg-mainBgColor p-3 ">
       <LeftSide />
     </div>
   );
