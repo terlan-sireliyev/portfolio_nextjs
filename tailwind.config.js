@@ -19,6 +19,8 @@ module.exports = {
       14: "14px",
       10: ".75rem",
       12: "12px",
+      3: "3rem",
+      15:"1.5rem",
     },
     colors: {
       mainBgColor: "#000000",

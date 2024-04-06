@@ -72,7 +72,7 @@ const index = () => {
   ///Line progress end
   return (
     <div className="">
-      <div className="bg-leftBgOne w-1/5   rounded-leftMainBorder h-auto ">
+      <div className="bg-leftBgOne  rounded-leftMainBorder h-auto ">
         <div className="  flex flex-col justify-center items-center pb-4 ">
           <div className="rounded-fiftyPercent w-24 h-24">
             <Image
