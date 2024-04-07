@@ -1,0 +1,35 @@
+/* SlidingTextAnimation.module.css */
+.sliderContainer {
+  overflow: hidden;
+  width: 100%;
+}
+
+.sliderText {
+  white-space: nowrap;
+  display: inline-block;
+  animation: slide 20s linear infinite;
+}
+
+.sliderText span {
+  color: #fff;
+  display: inline-block;
+  padding-right: 20px; /* Adjust spacing between text elements */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(13%);
+    transition: 3s;
+  }
+  100% {
+    transform: translateX(-100%);
+    transition: 1s;
+  }
+}
+.progScroll {
+  overflow-x: auto;
+  height: auto;
+}
+.progScroll::-webkit-scrollbar {
+  width: 0;
+}

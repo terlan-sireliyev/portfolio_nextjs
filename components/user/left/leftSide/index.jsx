@@ -71,8 +71,8 @@ const index = () => {
   }, [filled2]);
   ///Line progress end
   return (
-    <div className="">
-      <div className="bg-leftBgOne  rounded-leftMainBorder h-auto ">
+    <div className="w-full">
+      <div className="bg-leftBgOne w-full rounded-leftMainBorder h-auto ">
         <div className="  flex flex-col justify-center items-center pb-4 ">
           <div className="rounded-fiftyPercent w-24 h-24">
             <Image
@@ -125,14 +125,14 @@ const index = () => {
                 percentage={percentage}
                 circumference={circumference}
                 dashOffset={dashOffset}
-                color={"#0000FF"}
+                color={"#007C00"}
               />
               <Circle
                 radius={radius}
                 percentage={percentageRus}
                 circumference={circumference}
                 dashOffset={dashOffsetRus}
-                color={"#F70000"}
+                color={"#007C00"}
               />
               <Circle
                 radius={radius}

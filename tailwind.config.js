@@ -20,7 +20,8 @@ module.exports = {
       10: ".75rem",
       12: "12px",
       3: "3rem",
-      15:"1.5rem",
+      2: "2rem",
+      15: "1.5rem",
     },
     colors: {
       mainBgColor: "#000000",
@@ -32,6 +33,8 @@ module.exports = {
       leftTextColorRed: "#F70000",
       leftTextColorGreen: "#007C00",
       lineProgressColor: "#1FDF64",
+      navbarBgOne: "#121212",
+      navbarTextColor: "#4B5563",
     },
     borderRadius: {
       fiftyPercent: "50%",

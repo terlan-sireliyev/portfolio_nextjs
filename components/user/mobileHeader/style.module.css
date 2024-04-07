@@ -1,0 +1,11 @@
+.animationMobilHamburger {
+  animation: animationMobilHamburgerMenu 0.5s infinite alternate;
+}
+@keyframes animationMobilHamburgerMenu {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
