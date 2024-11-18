@@ -6,10 +6,10 @@ const SlidingTextAnimation = () => {
   return (
     <div className={styles.sliderContainer}>
       <div className={styles.sliderText}>
-        <span>1). Təcrübə hər kəsin öz səhvlərinə verdiyi addır</span>
-        <span>2). Qarışıqlıq proqramlaşdırmanın bir hissəsidir</span>
+        <span>1. Təcrübə hər kəsin öz səhvlərinə verdiyi addır</span>
+        <span>2. Qarışıqlıq proqramlaşdırmanın bir hissəsidir</span>
         <span>
-          3). <b>"Kopyala-yapışdır"</b> əslində proqramçılar üçün proqramçılar
+          3. <b>"Kopyala-yapışdır"</b> əslində proqramçılar üçün proqramçılar
           tərəfindən proqramlaşdırılmışdır.{" "}
         </span>
       </div>

@@ -9,7 +9,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import DownloadIcon from "@mui/icons-material/Download";
 import Sliks from "../skils/index";
-const index = () => {
+
+const Index = () => {
   const [percentage, setPercentage] = useState(0);
   const [percentageRus, setpercentageRus] = useState(0);
   const [percentageTurk, setPercentageTurk] = useState(0);
@@ -27,6 +28,7 @@ const index = () => {
     }, 10);
     return () => clearInterval(interval);
   }, [percentage]);
+
   useEffect(() => {
     const intervalRus = setInterval(() => {
       if (percentageRus < 50) {
@@ -44,10 +46,12 @@ const index = () => {
     }, 10);
     return () => clearInterval(intervalTurk);
   }, [percentageTurk]);
-  ///Line progress start
+
+  // Line progress start
   const [filled, setFilled] = useState(0);
   const [filled1, setFilled1] = useState(0);
   const [filled2, setFilled2] = useState(0);
+
   useEffect(() => {
     if (filled < 80) {
       setTimeout(() => {
@@ -55,6 +59,7 @@ const index = () => {
       }, 10);
     }
   }, [filled]);
+
   useEffect(() => {
     if (filled1 < 40) {
       setTimeout(() => {
@@ -62,6 +67,7 @@ const index = () => {
       }, 10);
     }
   }, [filled1]);
+
   useEffect(() => {
     if (filled2 < 70) {
       setTimeout(() => {
@@ -69,11 +75,12 @@ const index = () => {
       }, 10);
     }
   }, [filled2]);
-  ///Line progress end
+
+  // Line progress end
   return (
     <div className="w-full">
-      <div className="bg-leftBgOne w-full rounded-leftMainBorder h-auto ">
-        <div className="  flex flex-col justify-center items-center pb-4 ">
+      <div className="bg-leftBgOne w-full rounded-leftMainBorder h-[680px] ">
+        <div className="flex flex-col justify-center items-center pb-4 ">
           <div className="rounded-fiftyPercent w-24 h-24">
             <Image
               src="/img/img1.jpg"
@@ -91,7 +98,7 @@ const index = () => {
           </p>
         </div>
         <div className={leftSideStyle.progScroll}>
-          <div className="bg-red-600  bg-mainBgColor w-full py-4">
+          <div className="bg-red-600 bg-mainBgColor w-full py-4">
             <div className="flex justify-between mt-2 px-4">
               <span className="text-leftTextColorWhite text-10">Resident</span>
               <span className="text-leftTextColorGray text-10">Azerbaycan</span>
@@ -208,4 +215,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

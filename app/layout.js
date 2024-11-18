@@ -1,6 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import LeftSide from "../components/user/left/leftSide";
+import MobileHeader from "../components/user/mobileHeader/index";
+import RightSide from "../components/user/right/navbar/index";
+import centerSideStyle from "../components/user/center/centerSide/centerSide.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,7 +14,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="hidden max-lg:block ">
+          <MobileHeader />
+        </div>
+        <div className="bg-mainBgColor py-3 p-3 flex justify-between h-dvh overflow-hidden">
+          <div className="w-[250px] max-lg:hidden">
+            <LeftSide />
+          </div>
+          <div
+            className={`w-[76%] max-lg:w-[100%] ${centerSideStyle.progScroll}`}
+          >
+            {children}
+          </div>
+          <div className="max-lg:hidden w-[5%] bg-navbarBgOne rounded-leftMainBorder">
+            <RightSide />
+          </div>
+        </div>
+      </body>
     </html>
   );
 }

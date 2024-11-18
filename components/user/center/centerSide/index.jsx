@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
+import Image from "next/image"; // Import Image component from Next.js
 import SlidingTextAnimation from "./SlidingTextAnimation ";
 import TypewriterTextSlide from "./TypewriterTextSlide";
 import Expresties from "../experties";
+
 const Index = () => {
   return (
-    // leftSideStyle.progScroll
     <>
       <div className="relative h-80 w-full ">
         <div
@@ -27,8 +28,15 @@ const Index = () => {
             </div>
           </div>
         </div>
+        {/* Replaced <img> with <Image> for optimization */}
         <div className="max-lg:hidden absolute inset-y-[105px] right-0  h-[200px] w-[200px] ">
-          <img src="img/emoji.png" alt="" className="w-full" />
+          <Image
+            src="/img/emoji.png" // Path to your image
+            alt="Emoji"
+            width={200} // Set width
+            height={200} // Set height
+            className="w-full"
+          />
         </div>
       </div>
       <div
