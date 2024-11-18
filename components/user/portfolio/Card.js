@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image"; // Import Image from next/image
-
+//this is card.page
 const Card = () => {
   return (
     <div className="rounded-border15 border p-2 border-leftTextColorGreen">
