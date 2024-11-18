@@ -9,8 +9,8 @@ const SlidingTextAnimation = () => {
         <span>1. Təcrübə hər kəsin öz səhvlərinə verdiyi addır</span>
         <span>2. Qarışıqlıq proqramlaşdırmanın bir hissəsidir</span>
         <span>
-          3. <b>"Kopyala-yapışdır"</b> əslində proqramçılar üçün proqramçılar
-          tərəfindən proqramlaşdırılmışdır.{" "}
+          3. <b>&quot;Kopyala-yapışdır&quot;</b> əslində proqramçılar üçün
+          proqramçılar tərəfindən proqramlaşdırılmışdır.
         </span>
       </div>
     </div>
