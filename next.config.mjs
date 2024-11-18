@@ -6,10 +6,7 @@ const nextConfig = {
     locales: ["en", "az", "ru"],
     defaultLocale: "en",
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  swcMinify: true,
+  nify: true,
 };
 
 export default nextConfig;
