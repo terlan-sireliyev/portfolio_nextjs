@@ -9,11 +9,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import DownloadIcon from "@mui/icons-material/Download";
-import { IoMdClose } from "react-icons/io";
-
 import Sliks from "../skils/index";
 
-const Index = ({ toggleMenu }) => {
+const Index = () => {
   const [percentage, setPercentage] = useState(0);
   const [percentageRus, setpercentageRus] = useState(0);
   const [percentageTurk, setPercentageTurk] = useState(0);
@@ -81,16 +79,10 @@ const Index = ({ toggleMenu }) => {
 
   // Line progress end
   return (
-    <div className="w-full">
-      <div
-        className="bg-leftBgOne max-lg:mt-20 max-sm:mt-2 w-full max-lg:rounded-borderzero rounded-leftMainBorder 
-    h-[680px] max-lg:h-[100vh] md:h-[90vh] lg:h-[680px] overflow-hidden max-sm:w-full"
-      >
-        <div className="flex flex-col justify-center items-center pb-4 relative ">
-          <div className="absolute hidden max-lg:block top-3 right-3 text-13 cursor-pointer">
-            <IoMdClose onClick={toggleMenu} />
-          </div>
-          <div className="rounded-fiftyPercent max-lg:rounded-none w-24 h-24">
+    <div className="w-full ">
+      <div className="bg-leftBgTwo max-lg:mt-12 max-sm: mt-2 max-sm:h-[695px]  h-[600px] max-lg:h-[695px]  rounded-leftMainBorder  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
+        <div className="flex flex-col  justify-center items-center pb-4 ">
+          <div className="rounded-fiftyPercent w-24 h-24">
             <Image
               src="/img/img1.jpg"
               width={100}
@@ -106,7 +98,9 @@ const Index = ({ toggleMenu }) => {
             MERN Stack Developer | Open Source Contributor | Tech Blogger
           </p>
         </div>
-        <div className={leftSideStyle.progScroll}>
+
+        {/* 2ci hisse */}
+        <div className={`${leftSideStyle.progScroll}`}>
           <div className="bg-red-600 bg-mainBgColor w-full py-4">
             <div className="flex justify-between mt-2 px-4">
               <span className="text-leftTextColorWhite text-10">Resident</span>
@@ -134,7 +128,7 @@ const Index = ({ toggleMenu }) => {
             </div>
           </div>
           <div className=" bg-mainBgColor text-leftTextColorWhite pb-4">
-            <div className="text-10 font-bold max-lg:ml-[17px]">Languages</div>
+            <div className="text-10 font-bold">Languages</div>
             <div className="flex">
               <Circle
                 radius={radius}
@@ -164,8 +158,8 @@ const Index = ({ toggleMenu }) => {
               <div className=" text-leftTextColorWhite p-2 ml-4">Turk</div>
             </div>
           </div>
-          <div className="bg-mainBgColor max-lg:mt-4 max-sm:mt-0 border border-t-leftTextColorGray max-lg:border-none  py-4 ">
-            <div className="text-leftTextColorWhite font-bold text-10 max-lg:ml-[9px]  ">
+          <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none  py-4 ">
+            <div className="text-leftTextColorWhite font-bold text-10">
               Experties and Competencies
             </div>
 
@@ -187,10 +181,10 @@ const Index = ({ toggleMenu }) => {
               />
             </div>
           </div>
-          <div className="bg-mainBgColor max-lg:mt-4 max-sm:mt-0 border border-t-leftTextColorGray max-lg:border-none py-4">
+          <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none py-4">
             <Sliks />
           </div>
-          <div className="bg-mainBgColor max-lg:mt-4 max-sm:mt-0 z-0 border border-t-leftTextColorGray max-lg:border-none py-4">
+          <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none py-4">
             <span className="text-leftTextColorWhite cursor-pointer text-12">
               Download Resume
             </span>
@@ -199,7 +193,7 @@ const Index = ({ toggleMenu }) => {
             </span>
           </div>
         </div>
-        <div className="md:bg-leftBgTwo   max-sm:mt-0 flex justify-center z-0 gap-3  p-4">
+        <div className="flex bg-leftBgOne max-lg:mt-8 max-sm:mt-0 justify-center gap-3 mt-[-15px]  p-3">
           <a
             href="https://github.com/terlan-sireliyev?tab=repositories"
             className="text-leftTextColorWhite hover:text-lineProgressColor rounded-fiftyPercent"
