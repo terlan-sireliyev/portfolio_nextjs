@@ -80,7 +80,7 @@ const Index = () => {
   // Line progress end
   return (
     <div className="w-full ">
-      <div className="bg-leftBgTwo max-lg:mt-12 max-sm: mt-2 max-sm:h-[695px]  h-[600px] max-lg:h-[695px]  rounded-leftMainBorder  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
+      <div className="bg-leftBgTwo h-[680px]  max-sm:rounded-borderzero rounded-leftMainBorder  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
         <div className="flex flex-col  justify-center items-center pb-4 ">
           <div className="rounded-fiftyPercent w-24 h-24">
             <Image

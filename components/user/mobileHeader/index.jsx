@@ -40,14 +40,12 @@ const MobileNavbar = () => {
           </ul>
         </div>
 
-        <div className="h-screen flex">
-          <div
-            className={`absolute top-0 z-50 left-0 bg-leftBgOne h-screen w-[60%] max-sm:w-[80%] transition-transform duration-700 ease-in-out ${
-              isOpen ? "translate-x-0" : "-translate-x-full"
-            }`}
-          >
-            <LeftSide toggleMenu={toggleMenu} />
-          </div>
+        <div
+          className={`absolute top-0 z-50 left-0 bg-leftTextColorBlue   w-[60%] max-sm:w-[80%] transition-transform duration-700 ease-in-out ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
+          <LeftSide toggleMenu={toggleMenu} />
         </div>
       </div>
     </>
