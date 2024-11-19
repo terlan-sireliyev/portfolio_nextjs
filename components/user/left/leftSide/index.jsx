@@ -82,7 +82,10 @@ const Index = ({ toggleMenu }) => {
   // Line progress end
   return (
     <div className="w-full">
-      <div className="bg-leftBgOne w-full max-lg:rounded-borderzero rounded-leftMainBorder h-[680px] max-md:h-screen ">
+      <div
+        className="bg-leftBgOne max-lg:mt-20 max-sm:mt-2 w-full max-lg:rounded-borderzero rounded-leftMainBorder 
+    h-[680px] max-lg:h-[100vh] md:h-[90vh] lg:h-[680px] overflow-hidden max-sm:w-full"
+      >
         <div className="flex flex-col justify-center items-center pb-4 relative ">
           <div className="absolute hidden max-lg:block top-3 right-3 text-13 cursor-pointer">
             <IoMdClose onClick={toggleMenu} />
@@ -161,8 +164,8 @@ const Index = ({ toggleMenu }) => {
               <div className=" text-leftTextColorWhite p-2 ml-4">Turk</div>
             </div>
           </div>
-          <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none  py-4 ">
-            <div className="text-leftTextColorWhite font-bold text-10 max-lg:ml-[9px] bg-leftTextColorWhite">
+          <div className="bg-mainBgColor max-lg:mt-4 max-sm:mt-0 border border-t-leftTextColorGray max-lg:border-none  py-4 ">
+            <div className="text-leftTextColorWhite font-bold text-10 max-lg:ml-[9px]  ">
               Experties and Competencies
             </div>
 
@@ -184,10 +187,10 @@ const Index = ({ toggleMenu }) => {
               />
             </div>
           </div>
-          <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none py-4">
+          <div className="bg-mainBgColor max-lg:mt-4 max-sm:mt-0 border border-t-leftTextColorGray max-lg:border-none py-4">
             <Sliks />
           </div>
-          <div className="bg-mainBgColor z-0 border border-t-leftTextColorGray max-lg:border-none py-4">
+          <div className="bg-mainBgColor max-lg:mt-4 max-sm:mt-0 z-0 border border-t-leftTextColorGray max-lg:border-none py-4">
             <span className="text-leftTextColorWhite cursor-pointer text-12">
               Download Resume
             </span>
@@ -196,7 +199,7 @@ const Index = ({ toggleMenu }) => {
             </span>
           </div>
         </div>
-        <div className="flex justify-center z-0 gap-3 mt-[-15px] p-3">
+        <div className="md:bg-leftBgTwo   max-sm:mt-0 flex justify-center z-0 gap-3  p-4">
           <a
             href="https://github.com/terlan-sireliyev?tab=repositories"
             className="text-leftTextColorWhite hover:text-lineProgressColor rounded-fiftyPercent"
