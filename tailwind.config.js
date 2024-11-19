@@ -46,6 +46,7 @@ module.exports = {
       toolsBorder: "44px",
       border5: "5px",
       border15: "5px",
+      borderzero: "0px",
     },
   },
   plugins: [],

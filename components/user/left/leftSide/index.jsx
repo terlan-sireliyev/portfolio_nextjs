@@ -9,9 +9,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import DownloadIcon from "@mui/icons-material/Download";
+import { IoMdClose } from "react-icons/io";
+
 import Sliks from "../skils/index";
 
-const Index = () => {
+const Index = ({ toggleMenu }) => {
   const [percentage, setPercentage] = useState(0);
   const [percentageRus, setpercentageRus] = useState(0);
   const [percentageTurk, setPercentageTurk] = useState(0);
@@ -80,9 +82,12 @@ const Index = () => {
   // Line progress end
   return (
     <div className="w-full">
-      <div className="bg-leftBgOne w-full rounded-leftMainBorder h-[680px] ">
-        <div className="flex flex-col justify-center items-center pb-4 ">
-          <div className="rounded-fiftyPercent w-24 h-24">
+      <div className="bg-leftBgOne w-full max-lg:rounded-borderzero rounded-leftMainBorder h-[680px] max-md:h-screen ">
+        <div className="flex flex-col justify-center items-center pb-4 relative ">
+          <div className="absolute hidden max-lg:block top-3 right-3 text-13 cursor-pointer">
+            <IoMdClose onClick={toggleMenu} />
+          </div>
+          <div className="rounded-fiftyPercent max-lg:rounded-none w-24 h-24">
             <Image
               src="/img/img1.jpg"
               width={100}
@@ -126,7 +131,7 @@ const Index = () => {
             </div>
           </div>
           <div className=" bg-mainBgColor text-leftTextColorWhite pb-4">
-            <div className="text-10 font-bold">Languages</div>
+            <div className="text-10 font-bold max-lg:ml-[17px]">Languages</div>
             <div className="flex">
               <Circle
                 radius={radius}
@@ -156,8 +161,8 @@ const Index = () => {
               <div className=" text-leftTextColorWhite p-2 ml-4">Turk</div>
             </div>
           </div>
-          <div className="bg-mainBgColor border border-t-leftTextColorGray  py-4 ">
-            <div className="text-leftTextColorWhite font-bold text-10">
+          <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none  py-4 ">
+            <div className="text-leftTextColorWhite font-bold text-10 max-lg:ml-[9px] bg-leftTextColorWhite">
               Experties and Competencies
             </div>
 
@@ -179,10 +184,10 @@ const Index = () => {
               />
             </div>
           </div>
-          <div className="bg-mainBgColor border border-t-leftTextColorGray py-4">
+          <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none py-4">
             <Sliks />
           </div>
-          <div className="bg-mainBgColor border border-t-leftTextColorGray py-4">
+          <div className="bg-mainBgColor z-0 border border-t-leftTextColorGray max-lg:border-none py-4">
             <span className="text-leftTextColorWhite cursor-pointer text-12">
               Download Resume
             </span>
@@ -191,7 +196,7 @@ const Index = () => {
             </span>
           </div>
         </div>
-        <div className="flex justify-center gap-3 mt-[-15px] p-3">
+        <div className="flex justify-center z-0 gap-3 mt-[-15px] p-3">
           <a
             href="https://github.com/terlan-sireliyev?tab=repositories"
             className="text-leftTextColorWhite hover:text-lineProgressColor rounded-fiftyPercent"
