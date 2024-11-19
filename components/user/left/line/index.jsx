@@ -1,5 +1,5 @@
-"use client";
 import styleLine from "./line.module.css";
+
 const index = ({ filled, title, color }) => {
   return (
     <>

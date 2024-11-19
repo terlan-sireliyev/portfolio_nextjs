@@ -1,5 +1,7 @@
 "use client";
+
 import CircleStyle from "./circle.module.css";
+
 const Index = ({ radius, percentage, circumference, dashOffset, color }) => {
   return (
     <>

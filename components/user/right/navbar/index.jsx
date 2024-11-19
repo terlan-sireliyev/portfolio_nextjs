@@ -1,4 +1,5 @@
-"use client";
+"use client"; // Required for using hooks and interactivity
+
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./styles.module.css";
@@ -6,8 +7,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import { ImHome } from "react-icons/im";
 import { MdContactPhone } from "react-icons/md";
 import { RiProjectorFill } from "react-icons/ri";
-
 import Link from "next/link";
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -52,15 +53,21 @@ const Navbar = () => {
             </div>
             <div className=" h-[100%] flex justify-start pl-4 items-center">
               <ul className="flex flex-col gap-4">
-                <li className="font-bold hover:bg-[#333] hover:px-2 hover:rounded-border5 hover:transition duration-150" onClick={() => setMenuOpen(false)}>
-                  <Link href="/" className="flex gap-3 items-center " >
+                <li
+                  className="font-bold hover:bg-[#333] hover:px-2 hover:rounded-border5 hover:transition duration-150"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  <Link href="/" className="flex gap-3 items-center ">
                     <p className="mt-[-2px]">
                       <ImHome />
                     </p>
                     <p className="text-13"> Home</p>
                   </Link>
                 </li>
-                <li className="font-bold hover:bg-[#333] hover:px-2 hover:rounded-border5 hover:transition duration-150" onClick={() => setMenuOpen(false)}>
+                <li
+                  className="font-bold hover:bg-[#333] hover:px-2 hover:rounded-border5 hover:transition duration-150"
+                  onClick={() => setMenuOpen(false)}
+                >
                   <Link href="/contact" className="flex gap-3 items-center ">
                     <p className="mt-[-2px]">
                       <MdContactPhone />
@@ -68,7 +75,10 @@ const Navbar = () => {
                     <p className="text-13">Contact</p>
                   </Link>
                 </li>
-                <li className="font-bold hover:bg-[#333] hover:px-2 hover:rounded-border5 hover:transition duration-150" onClick={() => setMenuOpen(false)}>
+                <li
+                  className="font-bold hover:bg-[#333] hover:px-2 hover:rounded-border5 hover:transition duration-150"
+                  onClick={() => setMenuOpen(false)}
+                >
                   <Link href="/portfolio" className="flex gap-3 items-center ">
                     <p className="mt-[-2px]">
                       <RiProjectorFill />

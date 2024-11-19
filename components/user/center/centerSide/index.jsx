@@ -1,7 +1,9 @@
-"use client";
+"use client"; // Required for dynamic client-side functionality
+
 import React from "react";
 import Image from "next/image"; // Import Image component from Next.js
 import SlidingTextAnimation from "./SlidingTextAnimation ";
+
 import TypewriterTextSlide from "./TypewriterTextSlide";
 import Expresties from "../experties";
 

@@ -1,3 +1,5 @@
+"use client"; // Add this line to specify client-side rendering
+
 import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
@@ -46,7 +48,7 @@ const page = () => {
           </p>
           <p className="text-15 text-leftTextColorWhite">
             <FaLinkedin />
-          </p>{" "}
+          </p>
           <p className="text-15 text-leftTextColorWhite">
             <FaGithub />
           </p>

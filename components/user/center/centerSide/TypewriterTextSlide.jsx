@@ -1,4 +1,5 @@
-"use client";
+"use client"; // This makes it a client component
+
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
