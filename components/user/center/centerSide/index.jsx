@@ -17,7 +17,7 @@ const Index = () => {
             style={{ backgroundImage: "url(img/img2.png)" }}
           ></div>
           <div className="absolute left-0 inset-40 max-md:w-full  flex justify-center items-center">
-            <div className=" text-leftTextColorWhite  z-20">
+            <div className=" text-leftTextColorWhite   max-sm2:px-4 z-20">
               <div>
                 <TypewriterTextSlide />
               </div>
@@ -25,7 +25,7 @@ const Index = () => {
                 <SlidingTextAnimation />
               </div>
               <div>
-                <button className="py-2 px-10 mt-4 rounded-leftMainBorder bg-lineProgressColor">
+                <button className="py-2 px-10 max-sm2:px-6 mt-4 max-sm2:text-12 rounded-leftMainBorder bg-lineProgressColor">
                   Explore
                 </button>
               </div>

@@ -6,15 +6,17 @@ import { Typewriter } from "react-simple-typewriter";
 const TypewriterTextSlide = () => {
   return (
     <>
-      <h1 className="text-3 font-bold max-sm:text-2">Hello, Check this out!</h1>
-      <h1 className="bg-red-500 mt-2">
+      <h1 className="text-3 max-sm2:text-15 font-bold max-sm:text-2">
+        Hello, Check this out!
+      </h1>
+      <h1 className="bg-red-500 mt-2 max-sm2:text-12">
         <span className="font-bold">
           <span className="font-bold">{"<"}</span>
           <span className="text-lineProgressColor font-bold">div</span>
           <span className="font-bold">{">"}</span>
           I&apos;m a
         </span>
-        <span className="z-40 ml-2 text-lineProgressColor">
+        <span className="z-40 ml-2 max-sm2:text-12 text-lineProgressColor">
           <Typewriter
             loop
             cursor

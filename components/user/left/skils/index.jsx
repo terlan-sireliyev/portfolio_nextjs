@@ -4,7 +4,7 @@ const index = () => {
   return (
     <>
       <div className="flex flex-col gap-y-4 p-2">
-        <span className="text-leftTextColorWhite text-10 max-lg:ml-[12px] font-bold">
+        <span className="text-leftTextColorWhite text-14 max-lg:ml-[12px] font-bold">
           Tools
         </span>
         <div className="flex flex-wrap gap-2 pl-[8px] ">

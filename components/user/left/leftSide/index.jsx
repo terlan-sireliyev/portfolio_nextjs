@@ -97,8 +97,10 @@ const Index = ({ toggleMenu }) => {
               alt="Picture of the author"
             />
           </div>
-          <h1 className="  font-bold mt-4">Şirəliyev Tərlan</h1>
-          <p className="text-leftTextColorGray text-14 mt-2 text-center">
+          <h1 className="text-leftTextColorWhite text-14 font-bold mt-4">
+            Şirəliyev Tərlan
+          </h1>
+          <p className="text-leftTextColorGray text-12 mt-2 text-center">
             MERN Stack Developer | Open Source Contributor | Tech Blogger
           </p>
         </div>
@@ -107,32 +109,32 @@ const Index = ({ toggleMenu }) => {
         <div className={`${leftSideStyle.progScroll}`}>
           <div className="bg-red-600 bg-mainBgColor w-full py-4">
             <div className="flex justify-between mt-2 px-4">
-              <span className="text-leftTextColorWhite text-10">Resident</span>
-              <span className="text-leftTextColorGray text-10">Azerbaycan</span>
+              <span className="text-leftTextColorWhite text-12">Resident</span>
+              <span className="text-leftTextColorGray text-12">Azerbaycan</span>
             </div>
             <div className="flex justify-between mt-2 px-4">
-              <span className="text-leftTextColorWhite text-10">City</span>
-              <span className="text-leftTextColorGray text-10">Baku</span>
+              <span className="text-leftTextColorWhite text-12">City</span>
+              <span className="text-leftTextColorGray text-12">Baku</span>
             </div>
             <div className="flex justify-between mt-2 px-4">
-              <span className="text-leftTextColorWhite text-10">Age</span>
-              <span className="text-leftTextColorGray text-10">28</span>
+              <span className="text-leftTextColorWhite text-12">Age</span>
+              <span className="text-leftTextColorGray text-12">28</span>
             </div>
             <div className="flex justify-between mt-2 px-4">
-              <span className="text-leftTextColorWhite text-10">Email</span>
-              <span className="text-leftTextColorGray text-10">
+              <span className="text-leftTextColorWhite text-12">Email</span>
+              <span className="text-leftTextColorGray text-12">
                 Sireliyev95@list.ru
               </span>
             </div>
             <div className="flex justify-between mt-2 px-4">
-              <span className="text-leftTextColorWhite text-10">Contact</span>
-              <span className="text-leftTextColorGray text-10">
+              <span className="text-leftTextColorWhite text-12">Contact</span>
+              <span className="text-leftTextColorGray text-12">
                 +994-50-836-96-69
               </span>
             </div>
           </div>
           <div className=" bg-mainBgColor text-leftTextColorWhite pb-4">
-            <div className="text-10 font-bold max-lg:ml-[17px]">Languages</div>
+            <div className="text-14 font-bold max-lg:ml-[17px]">Languages</div>
             <div className="flex">
               <Circle
                 radius={radius}
@@ -157,13 +159,19 @@ const Index = ({ toggleMenu }) => {
               />
             </div>
             <div className="flex justify-evenly ml-[-10px] ">
-              <div className=" text-leftTextColorWhite p-2">English</div>
-              <div className=" text-leftTextColorWhite p-2">Russian</div>
-              <div className=" text-leftTextColorWhite p-2 ml-4">Turk</div>
+              <div className=" text-leftTextColorWhite p-2 text-12">
+                English
+              </div>
+              <div className=" text-leftTextColorWhite p-2 text-12">
+                Russian
+              </div>
+              <div className=" text-leftTextColorWhite p-2 text-12 ml-4">
+                Turk
+              </div>
             </div>
           </div>
           <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none  py-4 ">
-            <div className="text-leftTextColorWhite max-lg:ml-[12px] font-bold text-10">
+            <div className="text-leftTextColorWhite max-lg:ml-[12px] font-bold text-14">
               Experties and Competencies
             </div>
 

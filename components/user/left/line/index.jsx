@@ -4,10 +4,10 @@ const index = ({ filled, title, color }) => {
   return (
     <>
       <div className="mt-4 px-[12px]">
-        <div className="flex justify-between px-2">
-          <span className="text-leftTextColorGray text-10">{title}</span>
+        <div className="flex justify-between pl-[2px]">
+          <span className="text-leftTextColorGray text-12">{title}</span>
           <span
-            className={`text-leftTextColorGray text-10m${styleLine.progressPrecent}`}
+            className={`text-leftTextColorGray text-12 ${styleLine.progressPrecent}`}
           >
             {filled}%
           </span>
