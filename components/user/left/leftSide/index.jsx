@@ -10,8 +10,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import DownloadIcon from "@mui/icons-material/Download";
 import Sliks from "../skils/index";
+import { IoClose } from "react-icons/io5";
 
-const Index = () => {
+const Index = ({ toggleMenu }) => {
   const [percentage, setPercentage] = useState(0);
   const [percentageRus, setpercentageRus] = useState(0);
   const [percentageTurk, setPercentageTurk] = useState(0);
@@ -80,8 +81,13 @@ const Index = () => {
   // Line progress end
   return (
     <div className="w-full ">
-      <div className="bg-leftBgTwo h-[680px]  max-sm:rounded-borderzero rounded-leftMainBorder  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
-        <div className="flex flex-col  justify-center items-center pb-4 ">
+      <div className="bg-leftBgTwo h-[695px]  max-lg:rounded-borderzero rounded-leftMainBorder  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
+        <div className="flex flex-col  justify-center items-center pb-4 relative">
+          <div className="absolute top-4 right-4">
+            <button onClick={toggleMenu}>
+              <IoClose />
+            </button>
+          </div>
           <div className="rounded-fiftyPercent w-24 h-24">
             <Image
               src="/img/img1.jpg"
@@ -91,9 +97,7 @@ const Index = () => {
               alt="Picture of the author"
             />
           </div>
-          <h1 className="text-leftTextColorWhite font-bold mt-4">
-            Şirəliyev Tərlan
-          </h1>
+          <h1 className="  font-bold mt-4">Şirəliyev Tərlan</h1>
           <p className="text-leftTextColorGray text-14 mt-2 text-center">
             MERN Stack Developer | Open Source Contributor | Tech Blogger
           </p>
@@ -128,7 +132,7 @@ const Index = () => {
             </div>
           </div>
           <div className=" bg-mainBgColor text-leftTextColorWhite pb-4">
-            <div className="text-10 font-bold">Languages</div>
+            <div className="text-10 font-bold max-lg:ml-[17px]">Languages</div>
             <div className="flex">
               <Circle
                 radius={radius}
@@ -159,7 +163,7 @@ const Index = () => {
             </div>
           </div>
           <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none  py-4 ">
-            <div className="text-leftTextColorWhite font-bold text-10">
+            <div className="text-leftTextColorWhite max-lg:ml-[12px] font-bold text-10">
               Experties and Competencies
             </div>
 
@@ -184,8 +188,8 @@ const Index = () => {
           <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none py-4">
             <Sliks />
           </div>
-          <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none py-4">
-            <span className="text-leftTextColorWhite cursor-pointer text-12">
+          <div className="bg-mainBgColor  border border-t-leftTextColorGray max-lg:border-none py-4">
+            <span className="text-leftTextColorWhite cursor-pointer text-12 max-lg:ml-[12px]">
               Download Resume
             </span>
             <span className="text-leftTextColorWhite cursor-pointer text-12">

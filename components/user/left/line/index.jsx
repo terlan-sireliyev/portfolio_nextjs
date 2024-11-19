@@ -3,7 +3,7 @@ import styleLine from "./line.module.css";
 const index = ({ filled, title, color }) => {
   return (
     <>
-      <div className="mt-4 px-2">
+      <div className="mt-4 px-[12px]">
         <div className="flex justify-between px-2">
           <span className="text-leftTextColorGray text-10">{title}</span>
           <span

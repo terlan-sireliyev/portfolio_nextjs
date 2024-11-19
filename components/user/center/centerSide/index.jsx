@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <>
       <div className="">
-        <div className="relative bg-leftTextColorWhite h-80 w-full ">
+        <div className="relative   h-80 w-full ">
           <div
             className="absolute bg-cover bg-center blur-sm h-[300px] w-[100%]"
             style={{ backgroundImage: "url(img/img2.png)" }}
@@ -44,7 +44,7 @@ const Index = () => {
         </div>
 
         <div
-          className={`p-2 h-[300px] text-leftTextColorWhite overflow-y-auto [&::-webkit-scrollbar]:hidden   grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 `}
+          className={`p-2 h-[319px] text-leftTextColorWhite overflow-y-auto [&::-webkit-scrollbar]:hidden   grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 `}
         >
           <Expresties
             title={

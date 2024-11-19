@@ -44,13 +44,20 @@ const page = () => {
         </div>
         <div className="flex justify-center gap-4 bg-mainBgColor border border-leftTextColorGreen rounded-border15 mt-4 p-6">
           <p className="text-15 text-leftTextColorWhite">
-            <MdEmail />
+            <a href="https://e.mail.ru/sent/">
+              <MdEmail />
+            </a>
           </p>
           <p className="text-15 text-leftTextColorWhite">
-            <FaLinkedin />
+            {/* href="" */}
+            <a href="https://www.linkedin.com/in/terlan-sireliyev-820a44258/">
+              <FaLinkedin />
+            </a>
           </p>
           <p className="text-15 text-leftTextColorWhite">
-            <FaGithub />
+            <a href="https://github.com/terlan-sireliyev?tab=repositories">
+              <FaGithub />
+            </a>
           </p>
         </div>
       </div>
