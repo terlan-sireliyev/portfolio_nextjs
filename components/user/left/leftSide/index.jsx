@@ -100,7 +100,7 @@ const Index = ({ toggleMenu }) => {
           <h1 className="text-leftTextColorWhite text-14 font-bold mt-4">
             Şirəliyev Tərlan
           </h1>
-          <p className="text-leftTextColorGray text-12 mt-2 text-center">
+          <p className="text-leftTextColorGray max-sm1:px-[4px] text-12 mt-2 text-center">
             MERN Stack Developer | Open Source Contributor | Tech Blogger
           </p>
         </div>
@@ -159,13 +159,13 @@ const Index = ({ toggleMenu }) => {
               />
             </div>
             <div className="flex justify-evenly ml-[-10px] ">
-              <div className=" text-leftTextColorWhite p-2 text-12">
+              <div className=" text-leftTextColorWhite p-2 max-sm2:ml-2 text-12">
                 English
               </div>
-              <div className=" text-leftTextColorWhite p-2 text-12">
+              <div className=" text-leftTextColorWhite p-2 max-sm2:ml-3 text-12">
                 Russian
               </div>
-              <div className=" text-leftTextColorWhite p-2 text-12 ml-4">
+              <div className=" text-leftTextColorWhite p-2 max-sm2:ml-6 text-12 ml-4">
                 Turk
               </div>
             </div>
@@ -197,7 +197,7 @@ const Index = ({ toggleMenu }) => {
             <Sliks />
           </div>
           <div className="bg-mainBgColor  border border-t-leftTextColorGray max-lg:border-none py-4">
-            <span className="text-leftTextColorWhite cursor-pointer text-12 max-lg:ml-[12px]">
+            <span className="text-leftTextColorWhite cursor-pointer text-12 max-lg:ml-[22px]">
               Download Resume
             </span>
             <span className="text-leftTextColorWhite cursor-pointer text-12">
