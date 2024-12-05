@@ -72,7 +72,7 @@ const Index = () => {
             }
           />
           <Expresties
-            title={"asas"}
+            title={"MERN"}
             description={
               "I am a skilled MERN stack developer with extensive experience in building robust web applications using MongoDB, Express.js, React.js, and Node.js. I possess a strong understanding of server-side rendering, API integration, and database management. With my expertise, I can deliver dynamic and efficient web solutions tailored to meet the unique requirements of clients."
             }

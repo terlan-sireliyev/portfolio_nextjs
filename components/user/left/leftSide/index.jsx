@@ -12,6 +12,8 @@ import DownloadIcon from "@mui/icons-material/Download";
 import Sliks from "../skils/index";
 import { IoClose } from "react-icons/io5";
 import Link from "next/link";
+import { Information } from "../InformationMock";
+import { InformationPerson } from "./Mock";
 
 const Index = ({ toggleMenu }) => {
   const [percentage, setPercentage] = useState(0);
@@ -84,57 +86,44 @@ const Index = ({ toggleMenu }) => {
     <div className="  relative">
       <div className="bg-leftBgTwo flex items-center flex-col fixed top-0 z-50 w-[22%] max-lg:w-[90%] h-[660px] max-lg:h-screen max-lg:rounded-borderzero rounded-leftMainBorder  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
         <div className="fixed  bg-leftBgTwo z-50 w-[22%] max-lg:w-[90%] top-0">
-          <div className="flex flex-col justify-center items-center pb-4 relative">
-            <div className="absolute top-4 right-4 hidden max-lg:block">
-              <button onClick={toggleMenu}>
-                <IoClose />
-              </button>
+          {InformationPerson.map((item) => (
+            <div key={item.id} className="flex flex-col justify-center items-center pb-4 relative">
+              <div className="absolute top-4 right-4 hidden max-lg:block">
+                <button onClick={toggleMenu}>
+                  <IoClose />
+                </button>
+              </div>
+              <div className="rounded-fiftyPercent w-24 h-24">
+                <Image
+                  src="/img/img1.jpg"
+                  width={100}
+                  className="rounded-fiftyPercent m-auto pt-2 h-full object-cover"
+                  height={100}
+                  alt="Picture of the author"
+                />
+              </div>
+              <h1 className="text-leftTextColorWhite text-14 font-bold mt-4">
+                {item.name} {item.surname}
+              </h1>
+              <p className="text-leftTextColorGray max-sm1:px-[4px] text-12 mt-2 text-center">
+                {item.specialty}
+              </p>
             </div>
-            <div className="rounded-fiftyPercent w-24 h-24">
-              <Image
-                src="/img/img1.jpg"
-                width={100}
-                className="rounded-fiftyPercent m-auto pt-2 h-full object-cover"
-                height={100}
-                alt="Picture of the author"
-              />
-            </div>
-            <h1 className="text-leftTextColorWhite text-14 font-bold mt-4">
-              Şirəliyev Tərlan
-            </h1>
-            <p className="text-leftTextColorGray max-sm1:px-[4px] text-12 mt-2 text-center">
-              Web Developer | MERN & MEAN Stack Developer
-            </p>
-          </div>
+          ))}
         </div>
-
         {/* 2ci hisse */}
         <div className={`${leftSideStyle.progScroll} mt-[190px]`}>
           <div className="bg-red-600 bg-mainBgColor w-full py-4">
-            <div className="flex justify-between mt-2 px-4">
-              <span className="text-leftTextColorWhite text-12">Resident</span>
-              <span className="text-leftTextColorGray text-12">Azerbaycan</span>
-            </div>
-            <div className="flex justify-between mt-2 px-4">
-              <span className="text-leftTextColorWhite text-12">City</span>
-              <span className="text-leftTextColorGray text-12">Baku</span>
-            </div>
-            <div className="flex justify-between mt-2 px-4">
-              <span className="text-leftTextColorWhite text-12">Age</span>
-              <span className="text-leftTextColorGray text-12">30</span>
-            </div>
-            <div className="flex justify-between mt-2 px-4">
-              <span className="text-leftTextColorWhite text-12">Email</span>
-              <span className="text-leftTextColorGray text-12">
-                sireliyev95@list.ru
-              </span>
-            </div>
-            <div className="flex justify-between mt-2 px-4">
-              <span className="text-leftTextColorWhite text-12">Contact</span>
-              <span className="text-leftTextColorGray text-12">
-                +994-50-836-96-69
-              </span>
-            </div>
+            {
+              Information.map((item) => (
+                <div key={item.id} className="flex justify-between mt-2 px-4">
+                  <span className="text-leftTextColorWhite text-12">{item.title1}</span>
+                  <span className="text-leftTextColorGray text-12">{item.title2}</span>
+                </div>
+              ))
+            }
+
+
           </div>
           <div className=" bg-mainBgColor text-leftTextColorWhite pb-4">
             <div className="text-14 font-bold max-lg:ml-[17px] ml-[17px]">
@@ -218,7 +207,7 @@ const Index = ({ toggleMenu }) => {
             </a>
           </div>
         </div>
-        
+
         <div className="flex bg-leftBgOne w-full justify-center gap-3 mt-[-15px]  p-3">
           <a
             href="https://github.com/terlan-sireliyev?tab=repositories"
