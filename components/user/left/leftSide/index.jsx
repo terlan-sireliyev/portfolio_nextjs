@@ -11,6 +11,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import DownloadIcon from "@mui/icons-material/Download";
 import Sliks from "../skils/index";
 import { IoClose } from "react-icons/io5";
+import Link from "next/link";
 
 const Index = ({ toggleMenu }) => {
   const [percentage, setPercentage] = useState(0);
@@ -81,32 +82,34 @@ const Index = ({ toggleMenu }) => {
   // Line progress end
   return (
     <div className="  relative">
-      <div className="bg-leftBgTwo fixed top-0 z-50 w-[16%] max-lg:w-[90%] h-[695px] max-lg:h-screen max-lg:rounded-borderzero rounded-leftMainBorder  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
-        <div className="flex flex-col  justify-center items-center pb-4 relative">
-          <div className="absolute top-4 right-4 hidden max-lg:block">
-            <button onClick={toggleMenu}>
-              <IoClose />
-            </button>
+      <div className="bg-leftBgTwo flex items-center flex-col fixed top-0 z-50 w-[22%] max-lg:w-[90%] h-[660px] max-lg:h-screen max-lg:rounded-borderzero rounded-leftMainBorder  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
+        <div className="fixed  bg-leftBgTwo z-50 w-[22%] max-lg:w-[90%] top-0">
+          <div className="flex flex-col justify-center items-center pb-4 relative">
+            <div className="absolute top-4 right-4 hidden max-lg:block">
+              <button onClick={toggleMenu}>
+                <IoClose />
+              </button>
+            </div>
+            <div className="rounded-fiftyPercent w-24 h-24">
+              <Image
+                src="/img/img1.jpg"
+                width={100}
+                className="rounded-fiftyPercent m-auto pt-2 h-full object-cover"
+                height={100}
+                alt="Picture of the author"
+              />
+            </div>
+            <h1 className="text-leftTextColorWhite text-14 font-bold mt-4">
+              Şirəliyev Tərlan
+            </h1>
+            <p className="text-leftTextColorGray max-sm1:px-[4px] text-12 mt-2 text-center">
+              Web Developer | MERN & MEAN Stack Developer
+            </p>
           </div>
-          <div className="rounded-fiftyPercent w-24 h-24">
-            <Image
-              src="/img/img1.jpg"
-              width={100}
-              className="rounded-fiftyPercent m-auto pt-2 h-full object-cover"
-              height={100}
-              alt="Picture of the author"
-            />
-          </div>
-          <h1 className="text-leftTextColorWhite text-14 font-bold mt-4">
-            Şirəliyev Tərlan
-          </h1>
-          <p className="text-leftTextColorGray max-sm1:px-[4px] text-12 mt-2 text-center">
-            Web Developer | MERN & MEAN Stack Developer
-          </p>
         </div>
 
         {/* 2ci hisse */}
-        <div className={`${leftSideStyle.progScroll}`}>
+        <div className={`${leftSideStyle.progScroll} mt-[190px]`}>
           <div className="bg-red-600 bg-mainBgColor w-full py-4">
             <div className="flex justify-between mt-2 px-4">
               <span className="text-leftTextColorWhite text-12">Resident</span>
@@ -200,14 +203,23 @@ const Index = ({ toggleMenu }) => {
           </div>
           <div className="bg-mainBgColor  border border-t-leftTextColorGray max-lg:border-none py-4">
             <span className="text-leftTextColorWhite cursor-pointer ml-[17px] text-12 max-lg:ml-[22px]">
-              Download Resume
+              Download Resume Az
             </span>
-            <span className="text-leftTextColorWhite cursor-pointer text-12">
+            <a href="/pf/Tərlan-Şirəliyev-CV-az.pdf" download={"Resume"} className="text-leftTextColorWhite cursor-pointer text-12">
               <DownloadIcon />
+            </a>
+          </div>
+          <div className="bg-mainBgColor  border border-t-leftTextColorGray max-lg:border-none py-4">
+            <span className="text-leftTextColorWhite cursor-pointer ml-[17px] text-12 max-lg:ml-[22px]">
+              Download Resume En
             </span>
+            <a href="/pf/Tarlan-Shiraliyev-CV.pdf" download={"Resume"} className="text-leftTextColorWhite cursor-pointer text-12">
+              <DownloadIcon />
+            </a>
           </div>
         </div>
-        <div className="flex bg-leftBgOne max-lg:mt-8 max-sm:mt-0 justify-center gap-3 mt-[-15px]  p-3">
+        
+        <div className="flex bg-leftBgOne w-full justify-center gap-3 mt-[-15px]  p-3">
           <a
             href="https://github.com/terlan-sireliyev?tab=repositories"
             className="text-leftTextColorWhite hover:text-lineProgressColor rounded-fiftyPercent"

@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           <MobileHeader />
         </div>
         <div className="bg-mainBgColor py-3 p-3 flex justify-between   overflow-hidden">
-          <div className="w-[250px] max-lg:hidden">
+          <div className="w-[24%]  max-lg:hidden">
             <LeftSide />
           </div>
           <div
