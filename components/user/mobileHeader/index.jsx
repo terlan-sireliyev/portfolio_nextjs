@@ -41,8 +41,8 @@ const MobileNavbar = () => {
         </div>
 
         <div
-          className={`absolute top-0 z-50 left-0    w-[60%] max-sm:w-[80%] transition-transform duration-700 ease-in-out ${
-            isOpen ? "translate-x-0" : "-translate-x-full"
+          className={` top-0 z-50 left-0    w-[60%] max-sm:w-[80%] transition-transform duration-700 ease-in-out ${
+            isOpen ? "translate-x-0 fixed" : "-translate-x-full fixed"
           }`}
         >
           <LeftSide toggleMenu={toggleMenu} />

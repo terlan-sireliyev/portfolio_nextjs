@@ -49,6 +49,19 @@ module.exports = {
       navbarBgOne: "#121212",
       navbarTextColor: "#4B5563",
       green: "green",
+      teal: {
+        500: "#14B8A6", // Soft teal
+        400: "#2DD4BF", // Light teal
+      },
+      purple: {
+        500: "#8B5CF6", // Medium purple
+        400: "#A78BFA", // Soft purple
+      },
+    },
+    backgroundImage: {
+      "gradient-to-r": "linear-gradient(to right, var(--tw-gradient-stops))",
+      "gradient-teal-purple":
+        "linear-gradient(to right, #14B8A6, #2DD4BF, #8B5CF6, #A78BFA)",
     },
     borderRadius: {
       fiftyPercent: "50%",

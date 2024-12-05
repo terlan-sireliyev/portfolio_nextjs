@@ -8,6 +8,7 @@ import { ImHome } from "react-icons/im";
 import { MdContactPhone } from "react-icons/md";
 import { RiProjectorFill } from "react-icons/ri";
 import Link from "next/link";
+import { NAV_LINKS } from "./navbar_mock";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,39 +54,20 @@ const Navbar = () => {
             </div>
             <div className=" h-[100%] flex justify-start pl-4 items-center">
               <ul className="flex flex-col gap-4">
-                <li
-                  className="font-bold hover:bg-[#333] hover:px-2 hover:rounded-border5 hover:transition duration-150"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  <Link href="/" className="flex gap-3 items-center ">
-                    <p className="mt-[-2px]">
-                      <ImHome />
-                    </p>
-                    <p className="text-13"> Home</p>
-                  </Link>
-                </li>
-                <li
-                  className="font-bold hover:bg-[#333] hover:px-2 hover:rounded-border5 hover:transition duration-150"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  <Link href="/contact" className="flex gap-3 items-center ">
-                    <p className="mt-[-2px]">
-                      <MdContactPhone />
-                    </p>
-                    <p className="text-13">Contact</p>
-                  </Link>
-                </li>
-                <li
-                  className="font-bold hover:bg-[#333] hover:px-2 hover:rounded-border5 hover:transition duration-150"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  <Link href="/portfolio" className="flex gap-3 items-center ">
-                    <p className="mt-[-2px]">
-                      <RiProjectorFill />
-                    </p>
-                    <p className="text-13">Portfolio</p>
-                  </Link>
-                </li>
+                {NAV_LINKS.map((item) => (
+                  <li
+                  key={item.id}
+                    className="font-bold hover:bg-[#333] hover:px-2 hover:rounded-border5 hover:transition duration-150"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    <Link href={item.href} className="flex gap-3 items-center ">
+                      <p className="mt-[-2px]">
+                        <ImHome />
+                      </p>
+                      <p className="text-13">{item.title}</p>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

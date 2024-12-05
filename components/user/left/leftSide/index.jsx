@@ -80,10 +80,10 @@ const Index = ({ toggleMenu }) => {
 
   // Line progress end
   return (
-    <div className="w-full ">
-      <div className="bg-leftBgTwo h-[695px]  max-lg:rounded-borderzero rounded-leftMainBorder  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
+    <div className="  relative">
+      <div className="bg-leftBgTwo fixed top-0 z-50 w-[16%] max-lg:w-[90%] h-[695px] max-lg:h-screen max-lg:rounded-borderzero rounded-leftMainBorder  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
         <div className="flex flex-col  justify-center items-center pb-4 relative">
-          <div className="absolute top-4 right-4">
+          <div className="absolute top-4 right-4 hidden max-lg:block">
             <button onClick={toggleMenu}>
               <IoClose />
             </button>
@@ -101,7 +101,7 @@ const Index = ({ toggleMenu }) => {
             Şirəliyev Tərlan
           </h1>
           <p className="text-leftTextColorGray max-sm1:px-[4px] text-12 mt-2 text-center">
-            MERN Stack Developer | Open Source Contributor | Tech Blogger
+            Web Developer | MERN & MEAN Stack Developer
           </p>
         </div>
 
@@ -118,12 +118,12 @@ const Index = ({ toggleMenu }) => {
             </div>
             <div className="flex justify-between mt-2 px-4">
               <span className="text-leftTextColorWhite text-12">Age</span>
-              <span className="text-leftTextColorGray text-12">28</span>
+              <span className="text-leftTextColorGray text-12">30</span>
             </div>
             <div className="flex justify-between mt-2 px-4">
               <span className="text-leftTextColorWhite text-12">Email</span>
               <span className="text-leftTextColorGray text-12">
-                Sireliyev95@list.ru
+                sireliyev95@list.ru
               </span>
             </div>
             <div className="flex justify-between mt-2 px-4">
@@ -134,7 +134,9 @@ const Index = ({ toggleMenu }) => {
             </div>
           </div>
           <div className=" bg-mainBgColor text-leftTextColorWhite pb-4">
-            <div className="text-14 font-bold max-lg:ml-[17px]">Languages</div>
+            <div className="text-14 font-bold max-lg:ml-[17px] ml-[17px]">
+              Languages
+            </div>
             <div className="flex">
               <Circle
                 radius={radius}
@@ -171,7 +173,7 @@ const Index = ({ toggleMenu }) => {
             </div>
           </div>
           <div className="bg-mainBgColor border border-t-leftTextColorGray max-lg:border-none  py-4 ">
-            <div className="text-leftTextColorWhite max-lg:ml-[12px] font-bold text-14">
+            <div className="text-leftTextColorWhite max-lg:ml-[12px] font-bold text-14 ml-[17px]">
               Experties and Competencies
             </div>
 
@@ -197,7 +199,7 @@ const Index = ({ toggleMenu }) => {
             <Sliks />
           </div>
           <div className="bg-mainBgColor  border border-t-leftTextColorGray max-lg:border-none py-4">
-            <span className="text-leftTextColorWhite cursor-pointer text-12 max-lg:ml-[22px]">
+            <span className="text-leftTextColorWhite cursor-pointer ml-[17px] text-12 max-lg:ml-[22px]">
               Download Resume
             </span>
             <span className="text-leftTextColorWhite cursor-pointer text-12">

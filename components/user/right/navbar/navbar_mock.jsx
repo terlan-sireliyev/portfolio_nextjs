@@ -6,11 +6,16 @@ export const NAV_LINKS = [
   },
   {
     id: 2,
+    title: "About",
+    href: "/about",
+  },
+  {
+    id: 4,
     title: "Contact",
     href: "/contact",
   },
   {
-    id: 3,
+    id: 5,
     title: "Portfolio",
     href: "/portfolio",
   },
