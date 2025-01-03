@@ -16,7 +16,7 @@ const MobileNavbar = () => {
 
   return (
     <>
-      <div className="bg-leftBgOne text-leftTextColorGray w-full h-10 flex items-center justify-between px-2 lg:hidden relative">
+      <div className="bg-leftBgOne relative text-leftTextColorGray w-full h-10 flex items-center justify-between px-2 lg:hidden relative">
         <div className="text-lineProgressColor cursor-pointer relative">
           <MoreVertIcon
             onClick={toggleMenu}
@@ -41,12 +41,15 @@ const MobileNavbar = () => {
         </div>
 
         <div
-          className={` top-0 z-50 left-0    w-[60%] max-sm:w-[80%] transition-transform duration-700 ease-in-out ${
-            isOpen ? "translate-x-0 fixed" : "-translate-x-full fixed"
-          }`}
+          className={` top-0 z-50 left-0    w-[60%] max-sm:w-[80%] transition-transform duration-700 ease-in-out ${isOpen ? "translate-x-0 fixed" : "-translate-x-full fixed"
+            }`}
         >
           <LeftSide toggleMenu={toggleMenu} />
+
         </div>
+
+        <div onClick={toggleMenu} className={`fixed top-0 left-0 z-40  bg-transparent w-[100%] h-screen transition-transform duration-700 ease-in-out ${isOpen ? "translate-x-0 " : "-translate-x-full "
+          }`}>asdasd</div>
       </div>
     </>
   );

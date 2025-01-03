@@ -17,7 +17,7 @@ const Index = () => {
             className="absolute bg-cover bg-center blur-sm h-[300px] w-[100%]"
             style={{ backgroundImage: "url(img/img2.png)" }}
           ></div>
-          <div className="absolute left-0 inset-40 max-md:w-full  flex justify-center items-center">
+          <div className="absolute left-0 w-full inset-40 max-md:w-full  flex justify-center items-center">
             <div className=" text-leftTextColorWhite   max-sm2:px-4 z-20">
               <div>
                 <TypewriterTextSlide />

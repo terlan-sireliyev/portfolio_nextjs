@@ -10,10 +10,10 @@ const About = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="max-w-3xl bg-white/10 backdrop-blur-lg rounded-xl p-6 text-white shadow-lg">
+      <div className="max-w-3xl bg-white/10 backdrop-blur-lg rounded-xl  text-white shadow-lg">
         {isClient && (
           <div className="min-h-screen  flex items-center justify-center">
-            <div className="max-w-3xl bg-white/10 backdrop-blur-lg rounded-xl p-6 text-white shadow-lg">
+            <div className="max-w-3xl bg-white/10 backdrop-blur-lg rounded-xl text-white shadow-lg">
               <h1 className="text-3xl px-4 py-4 rounded-border5 font-bold text-center mb-4 bg-leftBgOne text-leftTextColorWhite">
                 Salam! Mən dinamik və həssas veb proqramlar yaratmaqda
                 ixtisaslaşmış Veb Tərtibatçıyam
@@ -35,11 +35,11 @@ const About = () => {
                 proqramlar təqdim etməkdə uğur qazanıram.
               </p>
               <p className="text-lg leading-8 mt-4 bg-leftBgOne px-4 py-4 rounded-border5 text-leftTextColorWhite">
-                React Developer kimi təcrübəmlə mən state management üçün 
+                React Developer kimi təcrübəmlə mən state management üçün
                 <b className="text-leftTextColorGreen px-[2px]">
-                   Redux Toolkit və Zustand
+                  Redux Toolkit və Zustand
                 </b>
-                 kimi alətlərdən istifadə edərək intuitiv və interaktiv
+                kimi alətlərdən istifadə edərək intuitiv və interaktiv
                 istifadəçi interfeysləri inkişaf etdirirəm. Mən tətbiqlərin
                 bütün cihazlarda uyğunlaşa bilən və təkrar istifadə edilə bilən
                 komponentlərə,əlçatanlığa və həssas dizayna üstünlük verirəm.

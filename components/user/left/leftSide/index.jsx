@@ -66,7 +66,7 @@ const Index = ({ toggleMenu }) => {
   }, [filled]);
 
   useEffect(() => {
-    if (filled1 < 40) {
+    if (filled1 < 50) {
       setTimeout(() => {
         setFilled1((prev) => (prev += 1));
       }, 10);
@@ -74,15 +74,16 @@ const Index = ({ toggleMenu }) => {
   }, [filled1]);
 
   useEffect(() => {
-    if (filled2 < 70) {
+    if (filled2 < 60) {
       setTimeout(() => {
         setFilled2((prev) => (prev += 1));
       }, 10);
     }
   }, [filled2]);
 
-  // Line progress end
   return (
+    <>
+  
     <div className="  relative">
       <div className="bg-leftBgTwo flex items-center flex-col fixed top-0 z-50 w-[22%] max-lg:w-[90%] h-[660px] max-lg:h-screen max-lg:rounded-borderzero rounded-leftMainBorder  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
         <div className="fixed  bg-leftBgTwo z-50 w-[22%] max-lg:w-[90%] top-0">
@@ -172,17 +173,17 @@ const Index = ({ toggleMenu }) => {
             <div>
               <LineProgress
                 filled={filled}
-                title={"Web Developer"}
+                title={"HTML/CSS"}
                 color={"#1FDF64"}
               />
               <LineProgress
                 filled={filled1}
-                title={"React Developer"}
+                title={"JavaScript"}
                 color={"#1FDF64"}
               />
               <LineProgress
                 filled={filled2}
-                title={"MERN Stack Developer"}
+                title={"React/Next"}
                 color={"#1FDF64"}
               />
             </div>
@@ -229,7 +230,8 @@ const Index = ({ toggleMenu }) => {
           </a>
         </div>
       </div>
-    </div>
+     </div>
+    </>
   );
 };
 
