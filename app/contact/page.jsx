@@ -147,7 +147,7 @@ const Page = () => {
           </div>
         </form>
 
-        <div className="mt-4 max-xs:bg-leftTextColorRed p-4 bg-leftBgOne border border-leftTextColorGreen rounded-border5 m-auto">
+        <div className="mt-4 p-4 bg-leftBgOne border border-leftTextColorGreen rounded-border5 m-auto">
           <div className="text-leftTextColorGray py-2 pb-[10px] border-b-2 border-leftTextColorGreen text-center max-sm:text-12">
             C 2024 bütün hüquqlar qorunur
           </div>
