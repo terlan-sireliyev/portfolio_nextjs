@@ -5,7 +5,7 @@ const index = () => {
     <>
       <div className="flex flex-col gap-y-4 p-2 ">
         <span className="text-leftTextColorWhite ml-[17px] text-14 max-lg:ml-[12px] font-bold">
-          Tools
+          Alətlər
         </span>
         <div className="flex flex-wrap gap-2 pl-[8px] ">
 

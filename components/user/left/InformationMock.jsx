@@ -1,17 +1,17 @@
 export const Information = [
     {
         id: 1,
-        title1: "Resident",
+        title1: "Ölkə",
         title2: "Azerbaycan",
     },
     {
         id: 2,
-        title1: "City",
+        title1: "Şəhər",
         title2: "Baku",
     },
     {
         id: 4,
-        title1: "Age",
+        title1: "Yaş",
         title2: "30",
     },
     {
@@ -21,7 +21,7 @@ export const Information = [
     },
     {
         id: 6,
-        title1: "Contact",
+        title1: "Əlaqə",
         title2: "+994-50-836-96-69",
     },
 ];
