@@ -58,14 +58,15 @@ const Index = () => {
 
         <div
           className={`
-                  p-2 
-                  text-leftTextColorWhite 
-                  overflow-y-auto 
-                  [&::-webkit-scrollbar]:hidden 
-                  grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 
-                  h-[319px] 
-                  md:h-[calc(100vh-100px)]
-                `}
+    p-2 
+    text-leftTextColorWhite 
+    overflow-y-auto 
+    [&::-webkit-scrollbar]:hidden 
+    grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 
+    gap-4 
+    h-[319px] 
+    max-lg:h-[calc(100vh-100px)]
+  `}
         >
           <Expresties
             title={"JavaScript and Frameworks"}
