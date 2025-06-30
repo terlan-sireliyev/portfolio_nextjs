@@ -64,7 +64,7 @@ const Index = () => {
                   [&::-webkit-scrollbar]:hidden 
                   grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 
                   h-[319px] 
-                  lg:h-[calc(100vh-100px)]
+                  md:h-[calc(100vh-100px)]
                 `}
         >
           <Expresties
